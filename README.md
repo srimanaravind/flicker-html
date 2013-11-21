@@ -3,6 +3,7 @@ flicker-html
 
 Web app in HTML5 and CSS3 that users Flicker API
 
+
 The objectives of this assignment are as follows:
 
 • Construct layouts and web pages using best practice HTML5 and CSS3.
