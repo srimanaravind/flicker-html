@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flickr Photo Viewer - HTML 5, CSS 3 and jQuery</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/flicker.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="searchBox">
+            <input type="text" id="searchImgText" />
+            <input type="button" value="Search" id="searchImg" />
+        </div>
+        <div id="container">
+            <div id="left_div">
+                <div id="main_img_div"></div>
+                <div id="main_img_title"></div>
+            </div>
+            <div id="right_div">
+                <div id="images"></div>
+                <div style="clear: both;"></div>
+                <div id="navigate"><img id="nav_back" src="img/back-128.png" onclick="javascript:pageBack();" /><img id="nav_forward" src="img/forward-128.png" onclick="javascript:pageForward();" /></div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+        <div id="fav" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div>Drag Your Favourite Images here (You can have upto 6 Images in Local Storage for my project)</div>
+        </div>
+        <div id="remove_img"><img id="remove" src="img/delete-128.png" ondrop="drop(event)" ondragover="allowDrop(event)" /></div>
+        <input type="hidden" id="page" value="1" />
+    </body>
+</html>

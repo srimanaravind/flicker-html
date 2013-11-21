@@ -1,0 +1,136 @@
+/* 
+    Document   : style
+    Created on : 21 Nov, 2013, 6:04:38 PM
+    Author     : Aravind
+    Description:
+        Style sheet for flicker
+*/
+
+html,body{
+    height: 100%
+}
+
+#left_div{
+    width: 60%;
+    height: 80%;
+    min-height: 80%;
+    float: left;
+}
+
+#right_div{
+    width: 40%;
+    height: 80%;
+    min-height: 80%;
+    float: left;
+}
+
+#container{
+    width: 100%;
+}
+
+.img_container{
+    width: 160px;
+    height: 160px;
+    float: left;
+}
+
+#main_img{
+    margin: 5px 5px 5px 5px;
+    box-shadow: 8px 8px 8px #888888;
+}
+
+.img{
+    width: 150px;
+    height: 150px;
+    margin: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 2px #888888;
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+.img:hover
+{
+    opacity: 0.5;
+}
+
+#main_img_div{
+    text-align: center;
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+       -moz-animation: fadein 4s; /* Firefox */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera */
+            animation: fadein 4s;
+}
+
+#main_img_title{
+    text-align: center;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#searchBox{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#searchImgText{
+    width: 400px;
+}
+
+#nav_back{
+    display: none;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+#nav_forward{
+    display: none;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+#navigate{
+    text-align: center;
+}
+
+#fav{
+    width: 90%; 
+    border: solid 1px; 
+    min-height: 200px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+#remove_img{
+    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    min-height: 150px;
+}
